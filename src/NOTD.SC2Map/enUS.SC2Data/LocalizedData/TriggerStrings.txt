@@ -1289,6 +1289,7 @@ Trigger/Name/F3D85684=Sec Team Choice
 Trigger/Name/F407F3A3=Hades Tentacles - Infection
 Trigger/Name/F4C4B909=Mobile Infantry
 Trigger/Name/F5779E52=OM7 - Charlie (Sec Team)
+Trigger/Name/F675BC1E=stressspawn
 Trigger/Name/F6AACE94=Wave 10 Optional - Civilian Rescue Initialization
 Trigger/Name/F6AFB01A=Map Init - Load Player
 Trigger/Name/F87ADF45=ST Boss 1 - Deimos Engaged
