@@ -155,6 +155,10 @@
         <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
     </CActorModel>
     <CActorMissile id="AcidMissile" parent="GenericAttackMissile" unitName="AcidMissile"/>
+    <CActorDoodad id="Antenna">
+        <NoFlyZoneSoftRadius value="0"/>
+        <NoFlyZoneHardRadius value="0"/>
+    </CActorDoodad>
     <CActorSound id="AntiVenomSound" parent="SoundOneShot">
         <Flags index="SuppressSaveLoad" value="0"/>
         <InheritType value="Continuous"/>
@@ -168,6 +172,12 @@
         <On Terms="Effect.ApoptosisBloodWave.Start; PassChance 10.000000" Send="Create"/>
         <Sound value="Mutalisk_Attack"/>
     </CActorSound>
+    <CActorDoodad id="BarracksWrecked">
+        <Footprint value="Footprint5x5Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="BraxisAlphaFloodLights">
+        <Footprint value="Footprint1x1"/>
+    </CActorDoodad>
     <CActorUnit id="Brutalisk22" parent="GenericUnitBase" unitName="BlaqkQueen">
         <Macros value=""/>
         <Macros value=""/>
@@ -215,6 +225,30 @@
             <Image value="Assets\Textures\wireframe-zerg-brutalisk.dds"/>
         </Wireframe>
     </CActorUnit>
+    <CActorDoodad id="BunkerWrecked">
+        <Footprint value="Footprint3x3Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="CastanarGenerator">
+        <Footprint value="FootprintDoodad2x2"/>
+    </CActorDoodad>
+    <CActorDoodad id="CastanarLightboard">
+        <Footprint value="FootprintDoodad2x1"/>
+    </CActorDoodad>
+    <CActorDoodad id="CastanarMonitorFloor">
+        <Footprint value="FootprintDoodad1x1"/>
+    </CActorDoodad>
+    <CActorDoodad id="CastanarMonitorFloorDestroyed">
+        <Footprint value="FootprintDoodad1x1"/>
+    </CActorDoodad>
+    <CActorDoodad id="CastanarStasisTubeDebris">
+        <Footprint value="Footprint4x4Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="CharBlisterEgg">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="CharIntestines">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
     <CActorSound id="ChargingSound2" parent="SoundContinuous">
         <On Terms="Behavior.Charging.Create" Send="Create"/>
         <On Terms="Behavior.Charging.Destroy" Send="Destroy"/>
@@ -224,6 +258,21 @@
         <On Terms="Behavior.Turbo.Off" Send="Destroy"/>
         <Sound value="Zealot_Charge2"/>
     </CActorSound>
+    <CActorDoodad id="CocoonedColonists">
+        <Footprint value=""/>
+    </CActorDoodad>
+    <CActorDoodad id="ColonistHutBurntOut">
+        <Footprint value="Footprint3x2"/>
+    </CActorDoodad>
+    <CActorDoodad id="ColonistHutDoodad">
+        <Footprint value="Footprint3x2"/>
+    </CActorDoodad>
+    <CActorDoodad id="CoolantTowerDoodad">
+        <Footprint value="Footprint5x5Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="DecalProtoss">
+        <DoodadFlags index="DefaultToModelAABBBounds" value="0"/>
+    </CActorDoodad>
     <CActorModel id="GenericAttackDamageModel2" parent="GenericAttackModel"/>
     <CActorSound id="GenericAttackDamageSound2" parent="GenericAttackSound"/>
     <CActorModel id="GenericAttackImpactModel2" parent="GenericAttackModel"/>
@@ -239,10 +288,31 @@
         <On Terms="ActorCreation.GhostOverlaySelection" Send="SetOpacity"/>
         <Model value="Ghost"/>
     </CActorModel>
+    <CActorDoodad id="HavenTree">
+        <Footprint value="Footprint1x1"/>
+    </CActorDoodad>
+    <CActorDoodad id="HighYieldStorage">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="HomeSmallDoodad">
+        <Footprint value="Footprint4x4Contour"/>
+    </CActorDoodad>
     <CActorModel id="Infection" parent="ModelAnimationStyleContinuous">
         <On Terms="Behavior.Infection.On" Send="Create"/>
         <On Terms="Behavior.Infection.Off" Send="Destroy"/>
     </CActorModel>
+    <CActorDoodad id="KorhalBuilding">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="KorhalBuildingDebris">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="KorhalLoneMarineStatue">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="LabWeaponCase">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
     <CActorModel id="LevelUp2" parent="ModelAddition">
         <Terms value="ValidateUnit AboveLevel1"/>
         <Inherits index="BaseModelScale" value="0"/>
@@ -258,6 +328,21 @@
         <Scale value="1.100000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorDoodad id="MengskStatueAloneCreep">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="MineralCart">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="MonlythCrystals">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="PortZionGarbagePile">
+        <Footprint value="Footprint1x1"/>
+    </CActorDoodad>
+    <CActorDoodad id="PortZionJunkPile">
+        <Footprint value="Footprint5x5Contour"/>
+    </CActorDoodad>
     <CActorAction id="PredatorAttack2" parent="GenericAttack" effectAttack="Predator2">
         <LaunchAttachQuery Methods="Weapon"/>
         <LaunchAssets Sound="Predator_AttackLaunch2"/>
@@ -273,6 +358,9 @@
         <DamageSound value="GenericAttackDamageSound2"/>
         <ShieldFlashType value="Header"/>
     </CActorAction>
+    <CActorDoodad id="PsiIndoctrinatorDoodad">
+        <Footprint value="Footprint3x3Contour"/>
+    </CActorDoodad>
     <CActorSound id="ReinforceSound">
         <EditorCategories value=""/>
         <On Terms="SoundDone" Send="Destroy"/>
@@ -1822,6 +1910,30 @@
         <ActionFlags index="VictimRevealsAttacker" value="1"/>
         <On index="6" Terms="Effect.ImpalerTentacleR1Missile.Start; At Source" Send="Create"/>
     </CActorAction>
+    <CActorDoodad id="SpacePlatformArchwayLarge">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="SpacePlatformCreepedDoodads">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="SpacePlatformGenerator">
+        <Footprint value="Footprint5x7Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="SpacePlatformReactor">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="SpacePlatformTower">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="SpacePlatformVentsZerged">
+        <Footprint value="FootprintDoodadContour4x4"/>
+    </CActorDoodad>
+    <CActorDoodad id="SpacePlatformWallDebris">
+        <Footprint value="Footprint4x4Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="SpectrePodDoodad">
+        <Footprint value="Footprint2x2"/>
+    </CActorDoodad>
     <CActorSound id="SprintSound2">
         <EditorCategories value=""/>
         <On Terms="SoundDone" Send="Destroy"/>
@@ -1836,10 +1948,19 @@
         <On Terms="Abil.RiflemanGear.SourcePrepStart" Send="Create"/>
         <Sound value="SwitchGears"/>
     </CActorSound>
+    <CActorDoodad id="THorner05SZergPensCenter">
+        <Footprint value="Footprint6x6Contour"/>
+    </CActorDoodad>
     <CActorSound id="TacticalNukeAcknowledgment" parent="SoundOneShot">
         <EditorCategories value=""/>
         <On Terms="Abil.TacNukeStrike.SourceCastStart" Send="Create"/>
     </CActorSound>
+    <CActorDoodad id="TerrainObjectCastanarPowerGeneratorDoodad">
+        <Footprint value="Footprint3x3Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="TerrazineTankDoodad">
+        <Footprint value="Footprint4x4Contour"/>
+    </CActorDoodad>
     <CActorSiteBillboard id="Test">
         <EditorCategories value=""/>
     </CActorSiteBillboard>
@@ -1891,6 +2012,9 @@
         <Host Subject="_Unit"/>
         <Model value="GunshipSupportInactiveFO"/>
     </CActorModel>
+    <CActorDoodad id="TrucksDestroyed">
+        <Footprint value="Footprint3x3Contour"/>
+    </CActorDoodad>
     <CActorSound id="VRLSound">
         <EditorCategories value=""/>
         <On Terms="SoundDone" Send="Destroy"/>
@@ -4050,6 +4174,9 @@
         <DamageMap index="Metal" Sound="MutaliskAttackSegment3DamageMetal" ModelReaction="MutaliskAttackSegment3DamageReactionMetal"/>
         <DamageMap index="Shield" Sound="MutaliskAttackSegment3DamageShield" ModelReaction="MutaliskAttackSegment3DamageReactionShield"/>
     </CActorAction>
+    <CActorDoodad id="VespeneTank">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
     <CActorRange id="VolatileInjectionRange" parent="RangeAbil" abil="VolatileInjection"/>
     <CActorRange id="SurgicalLaserRange" parent="RangeAbil" abil="SurgicalLaser"/>
     <CActorRange id="PrecisionShotRange" parent="RangeAbil" abil="PrecisionShot">
@@ -4733,6 +4860,12 @@
         <Macros value=""/>
         <Macros value="Shrinker"/>
     </CActorUnit>
+    <CActorDoodad id="WreckedMule">
+        <Footprint value="Footprint1x1"/>
+    </CActorDoodad>
+    <CActorDoodad id="WreckedSandbags">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
     <CActorUnit id="X1GuardianLevel1" parent="GenericUnitStandard" unitName="X1GuardianLevel1">
         <Macros value="UnloadDropAnim"/>
         <Macros value=""/>
@@ -7261,6 +7394,12 @@
     <CActorUnit id="ZergDropPodLarge">
         <GroupSoundThreshold value="0"/>
     </CActorUnit>
+    <CActorDoodad id="ZergSpire">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
+    <CActorDoodad id="ZergSpireLarge">
+        <Footprint value="Footprint2x2Contour"/>
+    </CActorDoodad>
     <CActorUnit id="ZerglingPet" parent="GenericBurrowerStandard" unitName="ZerglingPet">
         <Macros value="ZergBurrowStandardAnimMacro"/>
         <Macros value="ZergMediumBurrowEffects"/>
@@ -13319,11 +13458,12 @@
         <AcceptedHostedPropTransfers index="TintColor" value="0"/>
     </CActorUnit>
     <CActorDoodad id="RedstoneRockSpires">
-        <Footprint value="Footprint2x2DoodadBlockLOS"/>
         <Macros value="DoodadDeathMacro"/>
     </CActorDoodad>
     <CActorDoodad id="RockTower">
-        <Footprint value="FootprintDoodad6x6"/>
+        <Footprint value="FootprintDoodadContour4x4"/>
+        <NoFlyZoneSoftRadius value="0"/>
+        <NoFlyZoneHardRadius value="0"/>
     </CActorDoodad>
     <CActorUnit id="SatchelLevel2" parent="GenericUnitSelectable" unitName="SatchelLevel2">
         <On Terms="UnitBirth.*.Normal" Send="$Birth"/>
@@ -13344,11 +13484,11 @@
         <Sound value="SatchelBeep"/>
     </CActorSound>
     <CActorDoodad id="TTosh01RockSpires">
-        <Footprint value="Footprint2x2DoodadBlockLOS"/>
         <Macros value="DoodadDeathMacro"/>
+        <Footprint value="Footprint2x2Contour"/>
     </CActorDoodad>
     <CActorDoodad id="TerranCliffGapFiller">
-        <Footprint value="FootprintDoodad1x1BlockLOS"/>
+        <Footprint value="FootprintDoodad1x1"/>
     </CActorDoodad>
     <CActorUnit id="ThermalSight" parent="GenericUnitBase" unitName="ThermalSight">
         <EditorCategories value=""/>

@@ -13,9 +13,6 @@
         </Shape>
     </CFootprint>
     <CFootprint id="FootprintWallHorizontalFF">
-        <Layers index="Place">
-            <Rows index="1" value="xxxx"/>
-        </Layers>
         <Shape Borders="0,2,0;1,0,0;2,3,0;3,1,0"/>
     </CFootprint>
     <CFootprint id="MonlythLightBridge">

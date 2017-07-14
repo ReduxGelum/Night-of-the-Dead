@@ -2966,6 +2966,8 @@
         <MinimapRadius value="1.5"/>
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
         <HotkeyAlias value=""/>
+        <Footprint value="Footprint10x10Contour"/>
+        <DeadFootprint value="Footprint10x10Contour"/>
     </CUnit>
     <CUnit id="Priyanka" parent="CivilianFemale">
         <Name value="Unit/Name/Priyanka"/>
@@ -7540,6 +7542,11 @@
         <Sight value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/ZergGroundArmor"/>
         <BehaviorArray Link="DifficultyScalingHP"/>
+        <Collide index="Burrow" value="0"/>
+        <Collide index="Ground" value="0"/>
+        <Radius value="0"/>
+        <Footprint value=""/>
+        <PlacementFootprint value=""/>
     </CUnit>
     <CUnit id="InfestorBurrowed2">
         <Description value="Button/Tooltip/Infestor"/>
@@ -8742,6 +8749,9 @@
         <Radius value="0.375"/>
         <SeparationRadius value="0.375"/>
         <BehaviorArray Link="SharedExperience"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="ForceField" value="0"/>
     </CUnit>
     <CUnit id="ExplodingBarrelLarge">
         <LifeStart value="10"/>
@@ -8749,6 +8759,9 @@
         <FogVisibility value="Hidden"/>
         <AttackTargetPriority value="21"/>
         <Race value=""/>
+        <Collide index="Burrow" value="0"/>
+        <Collide index="Ground" value="0"/>
+        <Footprint value=""/>
     </CUnit>
     <CUnit id="FMJAmmo" parent="ITEM">
         <DeathRevealRadius value="2"/>
@@ -9156,6 +9169,8 @@
         <FlagArray index="Unselectable" value="1"/>
         <FlagArray index="Untargetable" value="1"/>
         <FlagArray index="Unradarable" value="1"/>
+        <Footprint value="Footprint10x10Contour"/>
+        <PlacementFootprint value="Footprint10x10Contour"/>
     </CUnit>
     <CUnit id="Infestor2">
         <DeathRevealRadius value="3"/>
@@ -11104,6 +11119,7 @@
     <CUnit id="TRaynor01SignsDestructible1">
         <FlagArray index="Invulnerable" value="1"/>
         <LifeArmor value="15"/>
+        <Footprint value="Footprint2x2Contour"/>
     </CUnit>
     <CUnit id="Tartarus">
         <DeathRevealRadius value="3"/>

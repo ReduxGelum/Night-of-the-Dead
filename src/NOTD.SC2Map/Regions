@@ -254,7 +254,7 @@
     <region id="40">
         <name value="Delta-1"/>
         <shape type="circle">
-            <center value="30.6745,127.5097"/>
+            <center value="30.5002,127.5002"/>
             <radius value="18.047"/>
         </shape>
     </region>
@@ -752,7 +752,7 @@
         <name value="Delta-1 Spawn"/>
         <color value="255,244,215,43"/>
         <shape type="circle">
-            <center value="32.6638,126.816"/>
+            <center value="35.5002,124.0002"/>
             <radius value="2.8803"/>
         </shape>
     </region>
@@ -939,14 +939,14 @@
     <region id="142">
         <name value="Underground Quarters 1"/>
         <shape type="circle">
-            <center value="58.4265,210.06"/>
+            <center value="58.002,210.0014"/>
             <radius value="1.6696"/>
         </shape>
     </region>
     <region id="143">
         <name value="Underground Quarters 2"/>
         <shape type="circle">
-            <center value="74.0102,210.0058"/>
+            <center value="74.002,210.0004"/>
             <radius value="1.6696"/>
         </shape>
     </region>
@@ -1295,14 +1295,14 @@
     <region id="198">
         <name value="IVAX Terminal 1"/>
         <shape type="circle">
-            <center value="35.5275,23.0012"/>
+            <center value="36.0043,23.0012"/>
             <radius value="0.819"/>
         </shape>
     </region>
     <region id="199">
         <name value="IVAX Terminal 2"/>
         <shape type="circle">
-            <center value="42.2,23.0095"/>
+            <center value="42.0024,23.0095"/>
             <radius value="0.819"/>
         </shape>
     </region>
@@ -1514,14 +1514,14 @@
     <region id="50">
         <name value="Prison Terminal 1"/>
         <shape type="circle">
-            <center value="11.9921,13.7937"/>
+            <center value="12.0114,14.011"/>
             <radius value="0.6423"/>
         </shape>
     </region>
     <region id="134">
         <name value="Prison Terminal 2"/>
         <shape type="circle">
-            <center value="13.626,9.127"/>
+            <center value="14.004,9.0046"/>
             <radius value="0.623"/>
         </shape>
     </region>

@@ -13339,14 +13339,20 @@ bool gt_stressspawn_Func (bool testConds, bool runActions) {
     if (auto0200E655_val == "s") {
         lv_enemytype = "Stalker2";
     }
+    else if (auto0200E655_val == "l") {
+        lv_enemytype = "Slasher";
+    }
+    else if (auto0200E655_val == "c") {
+        lv_enemytype = "Cronus";
+    }
+    else if (auto0200E655_val == "r") {
+        lv_enemytype = "InfestedAbomination";
+    }
     else if (auto0200E655_val == "z") {
         lv_enemytype = "ZombieLevel1";
     }
     else if (auto0200E655_val == "a") {
         lv_enemytype = "Ultralisk";
-    }
-    else if (auto0200E655_val == "g") {
-        lv_enemytype = "Zergling";
     }
     else if (auto0200E655_val == "e") {
         lv_enemytype = "Eos";
@@ -13358,6 +13364,7 @@ bool gt_stressspawn_Func (bool testConds, bool runActions) {
     for (autoB1B880F5_i = 1; autoB1B880F5_i <= autoB1B880F5_n; autoB1B880F5_i += 1) {
         libNtve_gf_CreateUnitsWithDefaultFacing(1, lv_enemytype, 0, 14, RegionRandomPoint(RegionPlayableMap()));
         UnitSetPropertyFixed(UnitLastCreated(), c_unitPropLife, 10.0);
+        UnitSetPropertyFixed(UnitLastCreated(), c_unitPropMovementSpeed, 10.0);
         UnitGroupAdd(gv_zombieWave, UnitLastCreated());
     }
     return true;
