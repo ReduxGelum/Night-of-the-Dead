@@ -13314,8 +13314,14 @@ void gf_TalentButton (int lp_panel, int lp_player, int lp_talentNumber) {
 // Trigger: stressspawn
 //--------------------------------------------------------------------------------------------------
 bool gt_stressspawn_Func (bool testConds, bool runActions) {
+    string auto0200E655_val;
     int autoB1B880F5_n;
     int autoB1B880F5_i;
+
+    // Variable Declarations
+    string lv_enemytype;
+
+    // Variable Initialization
 
     // Conditions
     if (testConds) {
@@ -13329,9 +13335,29 @@ bool gt_stressspawn_Func (bool testConds, bool runActions) {
         return true;
     }
 
+    auto0200E655_val = StringWord(EventChatMessage(false), 2);
+    if (auto0200E655_val == "s") {
+        lv_enemytype = "Stalker2";
+    }
+    else if (auto0200E655_val == "z") {
+        lv_enemytype = "ZombieLevel1";
+    }
+    else if (auto0200E655_val == "a") {
+        lv_enemytype = "Ultralisk";
+    }
+    else if (auto0200E655_val == "g") {
+        lv_enemytype = "Zergling";
+    }
+    else if (auto0200E655_val == "e") {
+        lv_enemytype = "Eos";
+    }
+    else {
+        lv_enemytype = "Stalker2";
+    }
     autoB1B880F5_n = 1000;
     for (autoB1B880F5_i = 1; autoB1B880F5_i <= autoB1B880F5_n; autoB1B880F5_i += 1) {
-        libNtve_gf_CreateUnitsWithDefaultFacing(1, "Stalker2", 0, 14, RegionRandomPoint(RegionPlayableMap()));
+        libNtve_gf_CreateUnitsWithDefaultFacing(1, lv_enemytype, 0, 14, RegionRandomPoint(RegionPlayableMap()));
+        UnitSetPropertyFixed(UnitLastCreated(), c_unitPropLife, 10.0);
         UnitGroupAdd(gv_zombieWave, UnitLastCreated());
     }
     return true;
@@ -13340,7 +13366,7 @@ bool gt_stressspawn_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void gt_stressspawn_Init () {
     gt_stressspawn = TriggerCreate("gt_stressspawn_Func");
-    TriggerAddEventChatMessage(gt_stressspawn, c_playerAny, "'", true);
+    TriggerAddEventChatMessage(gt_stressspawn, c_playerAny, "ss", false);
 }
 
 //--------------------------------------------------------------------------------------------------
